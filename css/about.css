@@ -1,0 +1,64 @@
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+main > div {
+  background-color: #40C9A2;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 20px;
+  text-align: left;
+}
+
+main > div > a {
+  color: #000000;
+  font-size: 18px;
+}
+
+main > div > a:hover {
+    background-color: #ffffff;
+    color: #2F9C95;
+}
+
+main > div > a:focus {
+    background-color: white;
+    color: black;
+    outline: none;
+}
+#container2 {
+  grid-area: area2;
+}
+#container3 {
+  grid-area: area3;
+}
+main {
+  background-color: #2f9c95;
+  display: grid;
+  grid-template-areas:
+  '.'
+  'area2'
+  'area2'
+    'area3'
+    'area3'
+    'area3';
+  
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+
+  main {
+    grid-template-areas:
+    '.     area3 '
+    'area2 area3 '
+    'area2 area3 ';
+  }
+
+}
